@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #614141;
+  background-color: #332929ec;
+}
+
+.skip {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+ 
+.skip:focus {
+   top: 0;
+}
+
+header {
+  min-height: 56px;
+  transition: min-height 0.3s;
+  background-color: #753449;
+}
+
+.header-inner {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headertitle {
+  font-size: 4em;
+  font-weight: 350;
+  margin: 0.5em 0.2em;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.menu_drawer {
+  font-size: 31px;
+  margin: 10px auto;
+  display: block;
+  width: 44px;
+}
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navlist {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar-item {
+  display: inline-block;
+  width: 24%;
+  font-size: 15px;
+  padding: 20px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  font-weight: bold; 
+}
+
+.hero {
+  display: flex;
+  min-height: 380px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+  background-color: black;
+  background-image: url("../public/images/heros/hero-image_4.jpg");
+}
+
+.hero_inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero_title {
+  color: #fff;
+  font-weight: 550;
+  font-size: 36px;
+}
+
+.hero_desc {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 250;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 25px;
+  text-align: left;
+  overflow: auto;
+}
+
+.latest {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.latesthead {
+  padding-top: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.contentlist {
+  margin: 10px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.image {
+  max-height: 190px;
+  width: 100%;
+}
+
+.restaurant_info {
+  padding: 18px 32px 32px 32px;
+}
+
+.info_title:hover {
+  opacity: 0.7;
+}
+
+.info_city {
+  margin-top: 1px;
+}
+
+.info_desc {
+  margin-top: 5px;
+}
+
+footer {
+  background-color: #753449;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 40px;
+  font-size: medium;
+}

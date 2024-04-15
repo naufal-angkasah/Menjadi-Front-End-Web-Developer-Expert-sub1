@@ -1,18 +1,32 @@
 import 'regenerator-runtime';
 import '../styles/main.css';
-import '../styles/responsive.css';
-import './data.js';
+import '../styles/main-responsive.css';
+import './data-display.js';
 
-const buttonElement = document.querySelector('#drawer');
-const navElement = document.querySelector('#navbar');
-const bodyElement = document.querySelector('body');
+const navbarDrawerElement = document.querySelector('#navigation-drawer-id');
+const navbarContainerElement = document.querySelector('#navbar-container-id');
+const navbarElement = document.querySelector('#navbar-id')
+const bodyGeneralElement = document.querySelector('body');
 
-buttonElement.addEventListener('click', event => {
-    navElement.classList.toggle('open');
+navbarDrawerElement.addEventListener('click', event => {
+    navbarContainerElement.classList.toggle('open');
     event.stopPropagation();
 });
 
-bodyElement.addEventListener('click', event => {
-    navElement.classList.remove('open');
+bodyGeneralElement.addEventListener('click', event => {
+    navbarContainerElement.classList.remove('open');
     event.stopPropagation();
 });
+
+window.addEventListener('scroll', () => {
+    const scrollOnPage = window.pageYOffset;
+  
+    if (scrollOnPage > 0 ) {
+      navbarElement.style.backgroundColor = '#25282d';
+      navbarElement.style.position = 'fixed';
+    } else {
+      navbarElement.style.backgroundColor = 'transparent';
+      navbarElement.style.position = 'absolute';
+    }
+  
+  });
